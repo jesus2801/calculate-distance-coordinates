@@ -1,0 +1,56 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcular distancia entre puntos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/dist/app.min.css" />
+  </head>
+  <body>
+    <div class="ctn-banner">
+      <object data="./images/banner.svg" type="image/svg+xml"></object>
+      <div class="info">
+        <h2>CALCULA LA DISTANCIA ENTRE PUNTOS</h2>
+        <div class="line"></div>
+        <p>Hecho por Jesús García</p>
+      </div>
+    </div>
+
+    <div class="main-ctn">
+      <p>
+        <b>Instrucciones:</b> digita los dos puntos y/o coordenadas para que el sistema
+        calcule la distancia.
+      </p>
+      <p>
+        <b>Nota:</b> Si deseas digitar operaciones en vez de números exactos, te invito a
+        que tengas en cuenta los siguientes simbolos: Para la
+        <b>multiplicación es el simbolo "*"</b>, para la
+        <b>division es el simbolo "/"</b>, para la
+        <b>potenciacion es el simbolo "**"</b>
+      </p>
+
+      <div class="point">
+        <label for="x1">Coordenada 1:</label>
+        <input type="text" placeholder="x1" id="x1" />
+        <input type="text" placeholder="y1" id="y1" />
+      </div>
+
+      <div class="point">
+        <label for="x2">Coordenada 2:</label>
+        <input type="text" placeholder="x2" id="x2" />
+        <input type="text" placeholder="y2" id="y2" />
+      </div>
+
+      <button>Calcular</button>
+
+      <ul class="results"></ul>
+    </div>
+  </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./js/dist/app.js"></script>
+</html>
